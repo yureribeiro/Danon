@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -23,8 +19,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="pt-BR">
+      <body className={inter.className}>
+        <Image
+          src={'https://leonardo-cdn.b-cdn.net/wp-content/uploads/2024/06/bg-grid-hero-m.svg'}
+          alt="lines"
+          className={'backgroundLines'}
+          quality={100}
+          priority
+          width={800}
+          height={800}
+          blurDataURL="https://leonardo-cdn.b-cdn.net/wp-content/uploads/2024/06/bg-grid-hero-m.svg"
+        />
         {children}
       </body>
     </html>

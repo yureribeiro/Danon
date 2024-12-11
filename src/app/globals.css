@@ -1,38 +1,49 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --background: #0f0f0f;
+  --text: #c4c4c4;
+  --textOpacity: #9e9e9e;
+  --primary: #3c52cc;
+  --primaryHover: #1e319e;
+  --secondary: #840ff1;
+  --secondaryHover: #470783;
+  --gradient: linear-gradient(90deg, #3c52cc, #770cdb);
+  --gradientScrolled: linear-gradient(90deg, #3c52cc86, #770cdb9d);
+  --border: .063rem solid #c4c4c459;
+  --boxShadow: 0 .25rem .8rem rgba(0, 0, 0, 0.158);
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scrollbar-width: thin;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body {
+  color: var(--text);
+  background: var(--background);
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.backgroundLines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
 }
 
 @media (prefers-color-scheme: dark) {
