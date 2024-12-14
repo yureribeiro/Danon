@@ -1,14 +1,16 @@
 :root {
   --background: #0f0f0f;
-  --text: #c4c4c4;
-  --textOpacity: #9e9e9e;
+  --text: #d6d6d6;
+  --textOpacity: #cbc9c9;
+  --textWhite: #fff;
   --primary: #3c52cc;
   --primaryHover: #1e319e;
   --secondary: #840ff1;
   --secondaryHover: #470783;
-  --gradient: linear-gradient(90deg, #3c52cc, #770cdb);
-  --gradientScrolled: linear-gradient(90deg, #3c52cc86, #770cdb9d);
-  --border: .063rem solid #c4c4c459;
+  --gradient: linear-gradient(90deg, #3c52cc, #5b0cdb);
+  --gradientScrolled: linear-gradient(90deg, #3c52ccb7, #4e1cd8c0);
+  --card: linear-gradient(90deg, #3c52cca1, #4e1cd882);
+  --border: .1rem solid #5a5dfca8;
   --boxShadow: 0 .25rem .8rem rgba(0, 0, 0, 0.158);
 }
 
@@ -17,6 +19,7 @@
   padding: 0;
   margin: 0;
   scrollbar-width: thin;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -24,11 +27,15 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   position: relative;
+  font-family: var(--font-inter);
 }
 
 body {
   color: var(--text);
   background: var(--background);
+  background-image: url(../../public/ruido.png);
+  display: grid;
+  place-items: center;
 }
 
 a {

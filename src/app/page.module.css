@@ -1,0 +1,4 @@
+.container {
+  width: clamp(300px, 100%, 1600px);
+  scroll-behavior: smooth;
+}

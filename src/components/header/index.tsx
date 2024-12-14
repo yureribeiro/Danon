@@ -54,12 +54,10 @@ export default function Header() {
 
       <div className={isOpen ? s.responsiveContent : s.content}>
       <nav className={s.nav}>
-        <Link href="/" className={s.link}>Home</Link>
         <Link href="#about" className={s.link}>About</Link>
         <Link href="#danomics" className={s.link}>Danomics</Link>
         <Link href="#howtobuy" className={s.link}>How To Buy</Link>
         <Link href="#social" className={s.link}>Social</Link>
-        <Link href="#faq" className={s.link}>FAQ</Link>
       </nav>
         <Link href="https://linktr.ee/crisgestaodepessoas" target="_blank" rel="noreferrer" prefetch={false} className={s.button}>BUY NOW</Link>
       </div>

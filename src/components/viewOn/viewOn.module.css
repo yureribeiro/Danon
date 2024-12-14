@@ -1,3 +1,67 @@
 .container {
-  height: 100vh;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: max-content;
+}
+
+.link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--border);
+  border-radius: 1rem;
+  padding: 1.3rem;
+  background-image: url(../../../public/shape-1.jpg);
+  background-size: cover;
+  transition: scale .3s ease-in-out;
+}
+
+.link:nth-child(2) {
+  background-image: url(../../../public/shape-7.jpg);
+}
+
+.link:nth-child(3) {
+  background-image: url(../../../public/shape-5.webp);
+}
+
+.link:hover {
+  scale: 1.02;
+}
+
+.icon {
+  width: 10rem;
+  height: max-content;
+  filter: drop-shadow(.1rem .1rem .1rem rgba(0, 0, 0, 0.808));
+}
+
+.link:nth-child(3) .icon {
+  width: 8rem;
+}
+
+.text {
+  text-align: center;
+  font-weight: 500;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.image {
+  width: 2.4rem;
+  height: max-content;
 }

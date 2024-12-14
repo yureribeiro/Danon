@@ -3,9 +3,8 @@ import s from './footer.module.css'
 export default function Footer() {
   return (
     <div className={s.container}>
-      <h1>Footer</h1>
-      {/* Somente um texto de isenção de responsabilidade */}
-      {/* AVISO LEGAL: $DN é uma moeda meme criada para diversão, sem absolutamente nenhum valor intrínseco ou qualquer expectativa de retorno financeiro. O token é apenas para fins de entretenimento e não assumimos nenhuma responsabilidade pelo valor deste token. $DAN é inspirado por XXXX para ser o rei das moedas meme. */}
+      <p className={s.disclaimer}>DISCLAIMER: The content of this site is for informational purposes only and is not intended as financial advice. Investments in cryptocurrencies are subject to high market risks and volatility. The Danon team does not endorse or recommend the purchase of any cryptocurrency mentioned on this site. Readers are advised to conduct their own research or consult a professional financial advisor before making any investment decisions. The Danon team will not be liable for any financial losses incurred based on the information presented here.</p>
+      <p className={s.copyright}>© 2024 Danon. All rights reserved.</p>
     </div>
   );
 }

@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Jolly_Lodger } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 
 const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+
+const mooLahLah = Jolly_Lodger({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  variable: '--font-mooLahLah',
+  weight: ["400"],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -20,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>
+      <body className={`${inter.variable} ${mooLahLah.variable}`}>
         <Image
           src={'https://leonardo-cdn.b-cdn.net/wp-content/uploads/2024/06/bg-grid-hero-m.svg'}
           alt="lines"
