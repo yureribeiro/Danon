@@ -77,7 +77,6 @@
 
 .text {
   display: flex;
-  align-items: center;
   gap: .5rem;
   font-weight: bold;
   color: var(--textWhite);
@@ -87,6 +86,21 @@
 .value {
   font-weight: 500;
   color: var(--textOpacity);
-  text-align: center;
   font-size: .95rem;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  } 
+
+  .title {
+    font-size: 3rem;
+    letter-spacing: .3rem;
+  }
+
+  .image1, .image2, .image3 {
+    display: none;
+  }
 }

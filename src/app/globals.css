@@ -4,6 +4,7 @@
   --textOpacity: #cbc9c9;
   --textWhite: #fff;
   --primary: #3c52cc;
+  --glass: #3c52cc9d;
   --primaryHover: #1e319e;
   --secondary: #840ff1;
   --secondaryHover: #470783;
@@ -25,7 +26,7 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   position: relative;
   font-family: var(--font-inter);
 }
@@ -56,5 +57,15 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }

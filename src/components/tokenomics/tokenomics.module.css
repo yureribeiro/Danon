@@ -50,7 +50,9 @@
   padding: .5rem 1rem;
   border-radius: 1.4rem;
   transition: background-color .2s ease-in-out;
-} .button:hover,
+}
+
+.button:hover,
 .buttonBuy:hover {
   background-color: var(--secondary);
   color: #fff;
@@ -96,4 +98,25 @@
   color: var(--textOpacity);
   text-align: center;
   font-size: .95rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .section {
+    width: 100%;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .image {
+    width: 70%;
+  }
+
+  .buttonBuy {
+    padding: .8rem;
+  }
 }

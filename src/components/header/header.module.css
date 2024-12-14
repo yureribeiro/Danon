@@ -89,7 +89,7 @@
     position: sticky;
     top: 1rem !important;
     left: 0;
-    transform: translateX(0%);
+    transform: translateX(2.5%);
     width: 95%;
     gap: 0;
   }
