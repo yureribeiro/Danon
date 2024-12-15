@@ -59,7 +59,7 @@ export default function Header() {
         <Link href="#howtobuy" className={s.link}>How To Buy</Link>
         <Link href="#social" className={s.link}>Social</Link>
       </nav>
-        <Link href="https://linktr.ee/crisgestaodepessoas" target="_blank" rel="noreferrer" prefetch={false} className={s.button}>BUY NOW</Link>
+        <Link href="https://pump.fun/coin/38BWrTTU17xWpgQfYQRJYcAKw4qBnKta72yYLCuepump" target="_blank" rel="noreferrer" prefetch={false} className={s.button}>BUY NOW</Link>
       </div>
     </header>
   );

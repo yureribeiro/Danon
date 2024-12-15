@@ -13,8 +13,8 @@ export default function Tokenomics() {
         <div className={s.contentCards}>
           <div className={s.card}>
             <p className={s.text}>CONTRACT ADDRESS</p>
-            <p className={s.value}>XXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-            <button className={s.button} onClick={() => navigator.clipboard.writeText('XXXXXXXXXXXXXXXXXXXXXXXXXX')}>Copy</button>
+            <p className={s.value}>38BWrTTU17xWpgQfYQRJYcAKw4qBnKta72yYLCuepump</p>
+            <button className={s.button} onClick={() => navigator.clipboard.writeText('38BWrTTU17xWpgQfYQRJYcAKw4qBnKta72yYLCuepump')}>Copy</button>
           </div>
           <div className={s.columns}>
             <div className={s.card}>
@@ -33,11 +33,11 @@ export default function Tokenomics() {
           <div className={s.columns}>
             <div className={s.card}>
               <p className={s.text}>MARKET CAP</p>
-              <p className={s.value}>$1,000,00</p>
+              <p className={s.value}>$10,000,00</p>
             </div>
             <div className={s.card}>
               <p className={s.text}>HOLDERS</p>
-              <p className={s.value}>30</p>
+              <p className={s.value}>20</p>
             </div>
           </div>
           <div className={s.card}>

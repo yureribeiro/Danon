@@ -13,7 +13,7 @@ export default function ViewOn() {
         <Link href='https://dexscreener.com/' target='_blank' className={s.link}>
           <Image src={dexscreen} alt="dexscreener" className={s.icon} quality={100} priority />
         </Link>
-        <Link href='https://pump.fun/board' target='_blank' className={s.link}>
+        <Link href='https://pump.fun/coin/38BWrTTU17xWpgQfYQRJYcAKw4qBnKta72yYLCuepump' target='_blank' className={s.link}>
           <Image src={pumpfun} alt="pumpfun" className={s.icon} quality={100} priority />
         </Link>
         <Link href='https://jup.ag/swap/' target='_blank' className={s.link}>
