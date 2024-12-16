@@ -11,8 +11,8 @@ export default function CTA() {
         <h1 className={s.title}>Join our community</h1>
         <p className={s.description}>Join the community that knows how to have fun while making history in the world of crypto!</p>
         <div className={s.links}>
-          <Link href='https://t.me/danoncoin' target='_blank' className={s.button}><Image src={telegram} alt="telegram" className={s.icon} /> Telegram</Link>
-          <Link href='https://x.com/danoncoin_' target='_blank' className={s.button}><Image src={x} alt="x" className={s.icon} /> Twitter</Link>
+          <Link href='https://t.me/danoncoin' target='_blank' rel="noreferrer" className={s.button}><Image src={telegram} alt="telegram" className={s.icon} /> Telegram</Link>
+          <Link href='https://x.com/danoncoin_' target='_blank' rel="noreferrer" className={s.button}><Image src={x} alt="x" className={s.icon} /> Twitter</Link>
         </div>
       </div>
     </div>

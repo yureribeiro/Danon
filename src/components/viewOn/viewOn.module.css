@@ -11,7 +11,7 @@
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   width: max-content;
 }
@@ -35,6 +35,10 @@
 
 .link:nth-child(3) {
   background-image: url(../../../public/shape-5.webp);
+}
+
+.link:nth-child(4) {
+  background-image: url(../../../public/shape-1.jpg);
 }
 
 .link:hover {
@@ -64,6 +68,12 @@
 .image {
   width: 2.4rem;
   height: max-content;
+}
+
+@media (max-width: 950px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 

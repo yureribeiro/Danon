@@ -35,7 +35,7 @@ export default function Tokenomics() {
             <p className={s.text}>SUPPLY</p>
             <p className={s.value}>1,000,000,000</p>
           </div>
-          <Link href='https://pump.fun/coin/38BWrTTU17xWpgQfYQRJYcAKw4qBnKta72yYLCuepump' target='_blank' className={s.buttonBuy}>BUY $DAN NOW</Link>
+          <Link href='https://pump.fun/coin/38BWrTTU17xWpgQfYQRJYcAKw4qBnKta72yYLCuepump' target='_blank' rel="noreferrer" className={s.buttonBuy}>BUY $DAN NOW</Link>
         </div>
       </div>
 
